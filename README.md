@@ -28,3 +28,4 @@ User ←→ Chat Surface ←→ Symi Gateway ←→ LLM Provider(s)
 - Email and calendar management
 - Data analysis and report generation
 - CRM and workflow automation
+- Test test test
