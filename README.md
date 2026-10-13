@@ -29,3 +29,14 @@ User ←→ Chat Surface ←→ Symi Gateway ←→ LLM Provider(s)
 - Data analysis and report generation
 - CRM and workflow automation
 - Test test test
+
+## 2048 Game
+
+A web-based 2048 game included in this repo.
+
+- **Files:** `index.html`, `styles.css`, `game.js` — no dependencies, no build step
+- **Controls:** Arrow keys or WASD on desktop; swipe on touch devices
+- **Features:** sliding/merge animations, score + best score (persisted in `localStorage`), win/game-over overlays, responsive layout
+- **Test:** `test-2048.cjs` — headless harness that runs the real game logic through 3000+ simulated moves (`node test-2048.cjs`)
+
+Open `index.html` in any browser to play.

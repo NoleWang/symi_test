@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2048 — symi_test</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='12' fill='%23edc22e'/%3E%3Ctext x='50' y='68' font-size='52' font-family='Arial' font-weight='bold' fill='%23f9f6f2' text-anchor='middle'%3E2048%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>2048</h1>
+    <div class="scores">
+      <div class="score-box"><span class="label">Score</span><span class="value" id="score">0</span></div>
+      <div class="score-box"><span class="label">Best</span><span class="value" id="best">0</span></div>
+    </div>
+  </header>
+  <div class="controls">
+    <button id="new-game">New Game</button>
+    <span class="hint">← ↑ ↓ → or WASD · swipe on touch</span>
+  </div>
+  <div class="board-wrap">
+    <div id="board">
+      <div class="grid-bg" id="grid-bg"></div>
+      <div id="tiles"></div>
+      <div id="overlay" class="hidden">
+        <div id="overlay-text"></div>
+        <div id="overlay-buttons">
+          <button id="overlay-btn"></button>
+          <button id="overlay-btn-2"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="footer">Join the tiles, get to <strong>2048</strong>!</p>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
